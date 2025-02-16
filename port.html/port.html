@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abinesh's portfolio</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .main1{
+            width: 100vw;
+            height: 10vh;
+            background-color: rgb(255, 255, 0);
+            position: relative;
+        }
+        .m11 h1{
+            margin: 0px;
+        }
+        .m11{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: rgb(0, 0, 0);
+            transform: translate(-50%,-50%);
+            font-size: x-large;
+        }
+        .main2{
+            width: 100vw;
+            height: 80vh;
+            position: relative;
+
+        }
+        .m21{
+            position: absolute;
+            top: 100px;
+            left: 30px;
+            color: rgb(6, 6, 6);
+            font-size:large;
+        }
+        .m22{
+            position: absolute;
+            top: 335px;
+            left: 30px;
+            
+        }
+        .m22 button{
+            width: 100px;
+            height: 30px;
+            font-size: large;
+            border-radius: 10px;
+        }
+        #img1{
+            height: 100%;
+            width: 100%;
+        }
+        .m23{
+            position: absolute;
+            top: 100px;
+            right: 300px;
+        }
+        .m23 img{
+            width: 350px;
+            height: 400px;
+            border-radius: 150px;
+        }
+        .m24{
+            position: absolute;
+            right: 380px;
+            top: 120px;
+            display: none;
+        }
+        .m25{
+            position: absolute;
+            right: 700px;
+            top: 350px;
+            display: none;
+        }
+        .m26{
+            position: absolute;
+            right: 400px;
+            top: 300px;
+            display: none;
+        }
+        .m27{
+            position: absolute;
+            right: 200px;
+            top: 350px;
+            display: none;
+        }
+        .m27 img{
+            width: 60px;
+            height: 70px;
+        }
+        .main3{
+            position: relative;
+            width: 100vw;
+            height: 10vh;
+            background-color: rgb(255, 255, 0);
+        }
+        .main3 h1{
+            position: absolute;
+            
+            left: 580px;
+            
+            font-size:xx-large;
+            color: black;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="m11">
+            <h1>ABINESH</h1>
+        </div>
+    </div>
+    <div class="main2">
+        
+            <img src="https://img.freepik.com/free-photo/flat-lay-geometric-shapes-background_23-2148319011.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724889600&semt=ais_hybrid" alt="" id="img1">
+        <div class="m21">
+            <h1 id="h1">Hi There,</h1>
+            <h1 id="h2">This is <span style="color: yellow;">Abinesh</span></h1>
+            <h1 id="h3">Anna university student</h1>
+
+        </div>
+        <div class="m22">
+            <button id="b"><b>About</b></button>
+        </div>
+        <div class="m23" id="visible">
+            <img src="IMG_20250106_171846.jpg" alt="">
+        </div>
+        <div class="m24" id="hidden">
+            <h1>Pursuing in mern intern</h1>
+            
+
+        </div>
+        <div class="m25" id="hidden2">
+            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-64.png" alt="">
+        </div>
+        <div class="m26" id="hidden3">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-128.png" alt="">
+        </div>
+        <div class="m27" id="hidden4">
+            <img src="https://www.vhv.rs/dpng/d/456-4562295_library-of-javascript-icon-graphic-freeuse-png-files.png" alt="">
+            
+        </div>
+    </div>
+    <div class="main3">
+        <div>
+            <h1><b>darkabi@444gmail.com</b></h1>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('b').onclick = function(){
+        document.getElementById('h1').innerHTML="Engineering student";
+        document.getElementById('h2').innerHTML="student in ANNA UNIVERSITY";
+        document.getElementById('h3').innerHTML="B.E IN MANUFACTURING";
+        document.getElementById("visible").style.display="none"
+        document.getElementById("hidden").style.display="block"
+        document.getElementById("hidden2").style.display="block"
+        document.getElementById("hidden3").style.display="block"
+        document.getElementById("hidden4").style.display="block"
+    }
+</script>
+</html>
